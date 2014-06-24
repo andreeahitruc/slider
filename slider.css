@@ -1,0 +1,72 @@
+body{
+	margin: 0 auto;
+}
+.container{
+	margin-top: 70px;
+	height: 500px;
+	overflow: hidden;
+	position: relative;
+}
+.container .site-width{
+	overflow: hidden;
+}
+.slider{
+	height: 500px;
+	width: 100%;
+}
+.slider > div > *{
+	opacity: 0;
+}
+.slider .slider-image{
+	height: 500px;
+	background-size: cover;
+	display: inline-block;
+}
+.slider > div:first-child *{
+	opacity: 1;
+}
+#slider1{
+	background:url('Images/imag3.jpg') no-repeat center center;
+}
+#slider2{
+	background:url('Images/imag1.jpg') no-repeat center center;
+}
+#slider3{
+	background:url('Images/imag0.jpg') no-repeat center center;
+}
+#slider4{
+	background:url('Images/imag2.jpg') no-repeat center center;
+}
+.slider-nav{
+	background-color: #CC3366;
+	width: 50px;
+	height: 500px;
+	position: absolute;
+	top: 70px;
+	opacity: 0.1;
+	display: inline-block;
+	z-index: 0;
+	cursor: pointer;
+}
+.slider-nav:hover{
+	background-image: url('Images/usericon.png');
+	background-color: #CC3366;
+	opacity: 0.8;
+	width: 50px;
+	height: 50px;
+	border-radius: 100%;
+	position: absolute;
+	top: 300px;
+}
+.next{
+	right: 0;
+}
+.prev{
+	left: 0;
+}
+.slider .slider-image p{
+	color: #CC3366;
+	text-align: center;
+	font-family: "Roboto Light";
+	font-size: 40px;
+}
